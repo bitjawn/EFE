@@ -4,7 +4,8 @@
     <li>Foundation Version: 5.30</li>
     <li>View Engine: EJS</li>
 </ul>
-```bash
+<h3>Instructions</h3>
+```
 # Installation
 npm install
 
