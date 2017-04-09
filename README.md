@@ -5,7 +5,7 @@
     <li>View Engine: EJS</li>
 </ul>
 <h3>Instructions</h3>
-```
+```bash
 # Installation
 npm install
 
