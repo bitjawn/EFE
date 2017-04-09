@@ -1,0 +1,39 @@
+ <script>      
+    function search(keyword) {
+        const url = '/search/' + keyword;
+        $.ajax({
+            type:'PUT',
+            url:url,
+            success:function(data){
+                //window.location.href='/search';
+                //window.open('/search', '_top');
+            },
+            error:function(err){}
+        });
+    }
+            
+    $(function(){
+        // search            
+        $('#searchButton').click(function(){                
+           if ($('#searchField').val()) {
+               search($('#searchField').val());
+               $('#searchField').val('');
+            } else {
+                var $alert = '<div class="alert callout" data-closable="slide-out-right">' +
+                        '<h5>Server Message</h5>' +
+                        '<p>Missing search term.</p>' +
+                        '<button class="close-button" aria-label="Dismiss alert" type="button" data-close>' +
+                        '<span aria-hidden="true">&times;</span>' +
+                        '</button>' +
+                        '</div>';                    
+                $('#message-area').append($alert);
+                $('#searchField').val('');
+            }                
+        });
+    });     
+    function embedAndShow(obj) {
+        $('#revealDiv').html(obj);
+        $('#revealer').trigger('click');                    
+        $('#searchField').val('');
+    }
+</script>

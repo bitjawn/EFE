@@ -1,0 +1,44 @@
+<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="main-menu"></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-responsive-menu="drilldown medium-dropdown">
+            <li class="menu-text">Dashboard</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li>
+                <a href="/products">Products</a>
+                <ul class="menu vertical">
+                    <li><a class="category" data-category="body spray" href="#">Body Sprays</a></li>
+                    <li><a class="category" data-category="drinkable" href="#">Drinkables</a></li>
+                    <li><a class="category" data-category="air freshener" href="#">Air Fresheners</a></li>
+                    <li><a class="category" data-category="bathing" href="#">Bathing</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="hide"><a id="revealer" data-open="searcher" href="#"></a></li>
+            <li class="hide"><a id="registery" data-open="registration" href="#">Register</a></li>
+        </ul>
+    </div>
+    
+    <div class="top-bar-right">
+        <ul class="dropdown menu">
+           <!--  <li><input id="searchField" type="search" placeholder="Search"></li>
+            <li><button id="searchButton" type="button" class="button">Search</button></li> -->
+            <li>
+                <form method="post" action="/search">
+                    <div class="input-group">
+                        <span class="input-group-label" style="margin:0;"><i class="fi-page-search" style="font-size:18pt;color:rgb(100,120,180);padding:0;margin:0;"></i></span>
+                        <input class="input-group-field" type="text" name="keyword"  placeholder="Search" required>
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <%- include components/head.ejs %>
+    <body>
+        <%- include components/menu.ejs %>
+        
+        <%- include components/message-area %>
+        
+        <section>
+            <div class="row">
+                <div class="small-12 medium-12 large-8 columns">                   
+                    <h2><%=category%> <small><%=items%></small></h2>
+                </div>
+            </div>
+            
+            <div class="row v-scroll categories">
+                <div class="small-12 medium-12 large-8 columns">
+                    <% if (results) { %>
+                        <% for (var p in products) { %>
+                            <% var product = products[p] %>
+                            <div class="accordion" data-accordion data-allow-all-closed="true">
+                                <div data-accordion-item>
+                                    <a href="#" class="accordion-title"><h4><%=product.title%></h4></a>
+                                    <div class="accordion-content" data-tab-content>
+                                        <div data-id="<%=product.id%>" class="card product">
+                                            <div class="card-divider">
+                                                <h4><%=product.category%></h4>
+                                            </div>
+                                            <img class="small-11 medium-9 large-10 columns" src="<%=product.source%>"/>
+                                            <div class="card-section">
+                                                <p><%=product.description%>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                    <%}}%>
+                </div>
+            </div>
+        </section>
+        
+        <%- include components/general-revealer.ejs %>
+
+        <%- include components/foundation-setup.ejs %>
+    </body>
+</html>

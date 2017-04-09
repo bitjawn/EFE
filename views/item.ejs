@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+   <%- include components/head.ejs %>
+    <body>
+        <%- include components/menu.ejs %>
+        
+        <%- include components/message-area %>
+        
+        <section class="item">            
+            <div class="row header">
+                <h1 class="small-8 medium-9 large-8 columns"><%=title%> <small><%=category%></small></h1>                
+            </div>
+            
+            <div class="row">
+                <div class="row">
+                    <img class="small-11 medium-9 large-8 columns thumbnail" src="<%=product.source%>"/>
+                    <div class="card-section">
+                        <p class="small-12 medium-9 large-8 columns"><%=product.description%>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <%- include components/general-revealer.ejs %>
+
+        <%- include components/foundation-setup.ejs %>
+    </body>   
+</html>

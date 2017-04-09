@@ -1,0 +1,153 @@
+/* Global */
+.row {
+    margin-top:10px;
+}
+
+.reveal {
+    height:50%;
+    max-height:40%;
+    width:45%;
+    
+}
+
+.generalRevealer {
+    height:50vh;
+    width:43vw;
+    margin:0;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2px;
+    border:solid 1pt black;
+}
+
+.v-scroll {
+	overflow:scroll;
+}	
+
+.paragraph {
+    height:60vh;
+    text-align:left;
+    margin:5px;
+}
+
+.product-description {
+    padding:10px;
+    margin:0;
+}
+
+.thumbnail {
+    max-height:450px;
+    min-height:100px;
+    margin:10px;
+}
+
+
+p {
+    padding:3px;
+}
+
+h4 , a{
+    padding:0;
+    margin:0;
+}
+
+form, form * {
+    padding:0;
+    margin:0;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+
+/* Item Page */
+.item {
+    margin:auto;
+    padding:0;
+}
+
+.item h1 {
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    /* margin:auto; */
+    /* border:solid 1pt purple; */
+}
+
+.item .header {
+    /* border:solid 1pt blue; */
+    min-width:600px;
+    text-align:center;
+}
+
+.body {
+    /* border:solid 1pt green; */
+}
+
+p {
+    /* border:solid 1pt green; */
+    margin:auto;
+    text-align:center;
+}
+
+
+
+/* Products Page */
+.product img {
+    cursor:pointer;
+}
+
+.products {
+    height:75vh;
+}
+
+
+
+/* Contact Page */
+.contact {
+    /* border:solid 1pt red; */
+    margin-top:20px;
+}
+
+.contact-div {
+    /* border:solid 1pt green; */
+    padding:0;
+}
+
+.contact-para {
+    text-align:left;
+    padding:0;
+}
+
+.contact-error {
+    list-style-type:none;
+}
+
+
+/* Index Page */
+.content {
+    height:75vh;
+}
+
+
+
+/* Search Page */
+.results {
+    height:75vh;
+}
+
+
+
+/* Category Page */
+.categories {
+    height:75vh;
+}

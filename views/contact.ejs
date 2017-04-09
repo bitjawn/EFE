@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <%- include components/head.ejs %>
+    <body>
+        <%- include components/menu.ejs %>
+        
+        <%- include components/message-area %>
+        
+        <section class="contact-errors row">
+            <div class="small-12 medium-12 large-10 columns">
+                <%if (errors) {%>
+                    <ul>
+                        <%for (var e in errors) {%>
+                            <% var error = errors[e]%>
+                            <li class="contact-error">
+                                <div class="alert callout small" data-closable>
+                                    <h5><%=error.msg%></h5>
+                                    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </li>
+                        <%}%>
+                    </ul>
+                <%}%>
+            </div>
+        </section>
+        
+        <section class="contact row">
+            <div class="small-12 medium-6 large-6 columns contact-div">
+                <h4 class="small-6 medium-6 large-6 columns contact-heading">Contact Us <small>It's <em>easy</em>. Just use this page</small></h4>
+                <p class="small-12 medium-12 large-12 columns contact-para">Compnay Name and Sub-Name</p>
+                <p class="small-12 medium-12 large-12 columns contact-para">12345 Jump Street, Suite 6789</p>
+                <p class="small-12 medium-12 large-12 columns contact-para">Philadelphia, PA 19100-2468</p>
+                <p class="small-12 medium-12 large-12 columns contact-para">484-922-3530</p>
+                <div class="small-12 medium-12 large-12 columns">Geographic Location Map</div>
+            </div>
+            
+            <div class="small-12 medium-6 large-6 columns contact-div">
+                <h4 class="small-6 medium-6 large-6 columns contact-heading">Contact Us <small>It's <em>easy</em>. Just use this page</small></h4>
+                <div class="small-12 medium-12 large-12 columns">
+                    <form method="post" action="/contact">
+                         <div class="input-group">
+                            <label>Required
+                                <input class="input-group-field name" type="text" name="name"  placeholder="Name" >
+                            </label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Required
+                                <input class="input-group-field email" type="email" name="email"  placeholder="Email" >
+                            </label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Optional
+                                <input class="input-group-field subject" type="text" name="subject"  placeholder="Subject">
+                            </label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Required
+                                <textarea class="input-group-field message" name="message" placeholder="Message" ></textarea>
+                            </label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-group-button">
+                                <input type="submit" class="button" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <%- include components/general-revealer.ejs %>
+
+        <%- include components/foundation-setup.ejs %>        
+    </body>
+</html>
