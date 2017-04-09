@@ -6,12 +6,12 @@
 </ul>
 <h3>Instructions</h3>
 ```bash
-# Installation
+## Installation
 npm install
 
-# Optional External Dependencies
+## Optional External Dependencies
 npm install -g nodemon
 
-# Run Application
+## Run Application
 npm start
 ```
