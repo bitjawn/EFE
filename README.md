@@ -5,13 +5,16 @@
     <li>View Engine: EJS</li>
 </ul>
 <h3>Instructions</h3>
+
 ```bash
-## Installation
-npm install
-
-## Optional External Dependencies
-npm install -g nodemon
-
-## Run Application
-npm start
+# Installation
+ clone https://github.com/bitjawn/EFE.git or download the zip
+ 
+ npm install
+ 
+# Optional External Dependency
+ npm install --global nodemon
+ 
+# Run App
+ npm start
 ```
