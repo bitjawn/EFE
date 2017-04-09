@@ -4,3 +4,13 @@
     <li>Foundation Version: 5.30</li>
     <li>View Engine: EJS</li>
 </ul>
+``` bash
+# Installation
+npm install
+
+# Optional External Dependencies
+npm install -g nodemon
+
+# Run Application
+npm start
+```
